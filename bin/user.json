@@ -1,7 +1,5 @@
 {
-  "user": {
-    "email": "santosjr87@gmail.com",
-    "password": "12345678",
-    "password_confirmation": "12345678"
-  }
+  "email": "santosjr87@gmail.com",
+  "password": "12345678",
+  "password_confirmation": "12345678"
 }
