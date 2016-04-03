@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :players, except: [:new, :edit]
   root 'clubs#index'
   resources :clubs, except: [:new, :edit]
   namespace :api do
