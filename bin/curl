@@ -4,3 +4,12 @@ sign_in() {
      -d @bin/user.json \
      http://localhost:3000/api/v1/auth/sign_in
 }
+
+create_club() {
+  curl -v -X POST \
+     -H "Content-Type: application/json" \
+     -d @bin/club.json \
+     http://localhost:3000/clubs
+}
+
+$1
