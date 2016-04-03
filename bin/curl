@@ -19,4 +19,11 @@ create_club() {
      http://localhost:3000/clubs
 }
 
+create_player() {
+  curl -v -X POST \
+     -H "Content-Type: application/json" \
+     -d @bin/player.json \
+     http://localhost:3000/players
+}
+
 $1
