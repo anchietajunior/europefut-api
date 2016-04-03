@@ -5,6 +5,13 @@ sign_in() {
      http://localhost:3000/api/v1/auth/sign_in
 }
 
+sign_up() {
+  curl -v -X POST \
+     -H "Content-Type: application/json" \
+     -d @bin/user_signup.json \
+     http://localhost:3000/api/v1/auth/
+}
+
 create_club() {
   curl -v -X POST \
      -H "Content-Type: application/json" \
