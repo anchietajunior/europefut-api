@@ -12,7 +12,9 @@ class ClubsController < ApplicationController
   # GET /clubs/1
   # GET /clubs/1.json
   def show
-    render json: @club
+    render json: @club.to_json(include: { :players => {
+      :only => :name
+      }})
   end
 
   # POST /clubs
