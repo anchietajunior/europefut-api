@@ -10,6 +10,9 @@ gem 'devise'
 gem 'devise_token_auth' # Token based authentication for Rails JSON APIs
 gem 'omniauth' # required for devise_token_auth
 
+# Active model serializer
+gem 'active_model_serializers', github: 'rails-api/active_model_serializers'
+
 group :development, :test do
   gem 'rspec-rails', '~> 3.0'
 end

@@ -12,7 +12,7 @@ class PlayersController < ApplicationController
   # GET /players/1
   # GET /players/1.json
   def show
-    render json: @player
+    render json: @player, include: 'club'
   end
 
   # POST /players

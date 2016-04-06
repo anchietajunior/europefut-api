@@ -6,15 +6,13 @@ class ClubsController < ApplicationController
   def index
     @clubs = Club.all
 
-    render json: @clubs
+    render json: @clubs, include: 'players'
   end
 
   # GET /clubs/1
   # GET /clubs/1.json
   def show
-    render json: @club.to_json(include: { :players => {
-      :only => :name
-      }})
+    render json: @club
   end
 
   # POST /clubs
