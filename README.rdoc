@@ -16,9 +16,13 @@ Things you may want to cover:
 
 * Devise-auth-token
 
+Setting up.
+
 <tt>bundle install</tt>
 
 <tt>rake db:migrate</tt>
+
+Testing.
 
 <tt>rails server</tt>
 
