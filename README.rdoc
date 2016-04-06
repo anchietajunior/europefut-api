@@ -16,10 +16,16 @@ Things you may want to cover:
 
 * Devise-auth-token
 
-<tt>bundle install</tt> <br/>
-<tt>rake db:migrate</tt> <br/>
+<tt>bundle install</tt>
+
+<tt>rake db:migrate</tt>
+
 <tt>rails server</tt>
+
 <tt>curl http://localhost:3000/clubs</tt>
+
 <tt>curl http://localhost:3000/clubs/:id</tt>
+
 <tt>curl http://localhost:3000/players</tt>
+
 <tt>curl http://localhost:3000/players/:id</tt>
